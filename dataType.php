@@ -20,7 +20,16 @@
 
     // object type contain multiple values
     // $object = new Car()
+
+    $firstName = "Pahreza";
+    $lastName = "Iqbal";
     ?>
+
+    <p>
+        <?php
+        echo "My name is $firstName $lastName";
+        ?>
+    </p>
 </body>
 
 </html>
