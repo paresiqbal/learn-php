@@ -17,6 +17,9 @@
 
     // array tyle contain multiple values
     $array = ["Hello", "World", 10, 10.5, true];
+
+    // object type contain multiple values
+    // $object = new Car()
     ?>
 </body>
 
