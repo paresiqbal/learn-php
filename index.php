@@ -16,7 +16,7 @@
     $boolean = true;
 
     // array tyle contain multiple values
-
+    $array = ["Hello", "World", 10, 10.5, true];
     ?>
 </body>
 
