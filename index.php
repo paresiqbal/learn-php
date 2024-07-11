@@ -9,7 +9,14 @@
 
 <body>
     <?php
-    echo "Hello World!";
+    // scalar data types only contain one value
+    $string = "Hello World";
+    $integer = 10;
+    $float = 10.5;
+    $boolean = true;
+
+    // array tyle contain multiple values
+
     ?>
 </body>
 
