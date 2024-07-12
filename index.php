@@ -25,7 +25,7 @@
                 <option value="amongus">Among Us</option>
             </select>
 
-            <button type="submit">Submit</button>
+            <button type="submit" name="submit">Submit</button>
         </form>
     </main>
     <?php
