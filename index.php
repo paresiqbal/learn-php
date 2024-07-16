@@ -22,7 +22,18 @@
         echo "Tidak ada kondisi yang terpenuhi";
     }
 
+    echo "<br>";
 
+    switch ($a) {
+        case 1:
+            echo "Nilai a adalah 1";
+            break;
+        case 2:
+            echo "Nilai a adalah 2";
+            break;
+        default:
+            echo "Nilai a tidak ada yang cocok";
+    }
     ?>
 </body>
 
