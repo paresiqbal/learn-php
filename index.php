@@ -11,7 +11,7 @@
     <main>
         <form action="includes/formhandler.php" method="post">
             <label for="firstname">First Name</label>
-            <input type="text" name="firstname" placeholder="first name ...">
+            <input require type="text" name="firstname" placeholder="first name ...">
 
             <label for="lastname">lastName</label>
             <input type="text" name="lastname" placeholder="last name ...">
