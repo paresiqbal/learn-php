@@ -8,29 +8,9 @@
 </head>
 
 <body>
-    <main>
-        <form action="includes/formhandler.php" method="post">
-            <label for="firstname">First Name</label>
-            <input require type="text" name="firstname" placeholder="first name ...">
-
-            <label for="lastname">lastName</label>
-            <input type="text" name="lastname" placeholder="last name ...">
-
-            <label for="favoritegame">Favorite Game ?</label>
-            <select name="favoritegame" id="favoritegame">
-                <option value="none">None</option>
-                <option value="fortnite">Fortnite</option>
-                <option value="minecraft">Minecraft</option>
-                <option value="roblox">Roblox</option>
-                <option value="amongus">Among Us</option>
-            </select>
-            <button type="submit" name="submit">Submit</button>
-        </form>
-    </main>
     <?php
 
     ?>
-
 </body>
 
 </html>
