@@ -34,6 +34,11 @@
             echo "please fill all fields";
             $errros = true;
         }
+
+        if (!is_numeric(($numb1) && !is_numeric($numb2))) {
+            echo "please enter a valid number";
+            $errros = true;
+        }
     }
     ?>
 </body>
