@@ -26,6 +26,14 @@
         $numb1 = filter_input(INPUT_POST, "numb1", FILTER_SANITIZE_NUMBER_FLOAT);
         $numb2 = filter_input(INPUT_POST, "numb2", FILTER_SANITIZE_NUMBER_FLOAT);
         $operator = htmlspecialchars($_POST["operator"]);
+
+        // error handlers
+        $errros = false;
+
+        if (empty($numb1) || empty($numb2) || empty($operator)) {
+            echo "please fill all fields";
+            $errros = true;
+        }
     }
     ?>
 </body>
