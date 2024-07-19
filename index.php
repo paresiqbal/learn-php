@@ -9,16 +9,18 @@
 
 <body>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="get">
-        <input type="number" name="numb1" placeholder="first number" require>
+        <input type="number" name="numb1" placeholder="first number" required>
         <select name="operator">
             <option value="add">+</option>
             <option value="sub">-</option>
             <option value="mul">*</option>
             <option value="div">/</option>
         </select>
-        <input type="number" name="numb2" placeholder="second number" require>
+        <input type="number" name="numb2" placeholder="second number" required>
         <button>calculatted</button>
     </form>
+
+
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -38,6 +40,30 @@
         if (!is_numeric(($numb1) && !is_numeric($numb2))) {
             echo "please enter a valid number";
             $errros = true;
+        }
+
+        // calculate
+        if (!$errros) {
+            $result = 0; // default value
+            switch ($operator) {
+                case "add":
+                    $result = $numb1 + $numb2;
+                    break;
+                case "sub":
+                    $result = $numb1 - $numb2;
+                    break;
+                case "mul":
+                    $result = $numb1 * $numb2;
+                    break;
+                case "div":
+                    $result = $numb1 / $numb2;
+                    break;
+                default:
+                    echo "please select a valid operator";
+            }
+
+            echo "<br>";
+            echo "result is: " . $result;
         }
     }
     ?>
