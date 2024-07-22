@@ -9,14 +9,16 @@
 
 <body>
     <?php
-    $fruits = ["apple", "banana", "cherry"];
-    echo $fruits[1];
+    $fruits = ["apple", "banana", "orange"];
+    $vegetables = ["carrot", "pea", "cabbage"];
 
-    $fruits[] = "avocado";
-    echo $fruits[3];
+    array_splice($fruits, 1, 0, "Mango");
+    array_splice($fruits, 3, 0, $vegetables);
 
-    $fruits[0] = "orange";
-    echo $fruits[0];
+    print_r($fruits);
+    echo "<br>";
+    print_r($fruits);
+
     ?>
 </body>
 
