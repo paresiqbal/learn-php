@@ -9,24 +9,18 @@
 
 <body>
     <?php
-    $fruits = ["apple", "banana", "orange"];
-    $vegetables = ["carrot", "pea", "cabbage"];
+    $string =  "Hello World!";
 
-    array_splice($fruits, 1, 0, "Mango");
-    array_splice($fruits, 3, 0, $vegetables);
-
-    print_r($fruits);
-    echo "<br>";
-    print_r($fruits);
+    echo strpos($string, "W");
     echo "<br>";
 
+    echo str_replace("World!", "Guys", $string);
+    echo "<br>";
 
-    $food = [
-        "junk" => ["burger", "pizza"], "healthy" => ["salad", "pasta"]
-    ];
+    echo strtolower($string);
+    echo "<br>";
 
-    echo $food["junk"][0];
-
+    print_r(explode(" ", $string));
     ?>
 </body>
 
