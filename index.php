@@ -9,18 +9,12 @@
 
 <body>
     <?php
-    $string =  "Hello World!";
+    function sayHello()
+    {
+        echo "Hello World!";
+    }
 
-    echo strpos($string, "W");
-    echo "<br>";
-
-    echo str_replace("World!", "Guys", $string);
-    echo "<br>";
-
-    echo strtolower($string);
-    echo "<br>";
-
-    print_r(explode(" ", $string));
+    sayHello();
     ?>
 </body>
 
