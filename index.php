@@ -18,6 +18,14 @@
     print_r($fruits);
     echo "<br>";
     print_r($fruits);
+    echo "<br>";
+
+
+    $food = [
+        "junk" => ["burger", "pizza"], "healthy" => ["salad", "pasta"]
+    ];
+
+    echo $food["junk"][0];
 
     ?>
 </body>
