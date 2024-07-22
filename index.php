@@ -9,12 +9,13 @@
 
 <body>
     <?php
-    function sayHello()
+    function sayHello($name, $lastname)
     {
-        echo "Hello World!";
+        return "Hello $name $lastname";
     }
 
-    sayHello();
+    $value =  sayHello("Pares", "Iqbal");
+    echo $value;
     ?>
 </body>
 
