@@ -9,13 +9,21 @@
 
 <body>
     <?php
-    function sayHello($name, $lastname)
-    {
-        return "Hello $name $lastname";
+    for ($i = 0; $i < 10; $i++) {
+        echo "Hello $i <br>";
     }
 
-    $value =  sayHello("Pares", "Iqbal");
-    echo $value;
+    $number = 5;
+    while ($number < 10) {
+        echo "This is number $number <br>";
+        $number++;
+    }
+
+    $test = 10;
+    do {
+        echo "This is test $test <br>";
+        $test++;
+    } while ($test < 15);
     ?>
 </body>
 
