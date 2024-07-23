@@ -9,21 +9,27 @@
 
 <body>
     <?php
-    for ($i = 0; $i < 10; $i++) {
-        echo "Hello $i <br>";
-    }
+    // for ($i = 0; $i < 10; $i++) {
+    //     echo "Hello $i <br>";
+    // }
 
-    $number = 5;
-    while ($number < 10) {
-        echo "This is number $number <br>";
-        $number++;
-    }
+    // $number = 5;
+    // while ($number < 10) {
+    //     echo "This is number $number <br>";
+    //     $number++;
+    // }
 
-    $test = 10;
-    do {
-        echo "This is test $test <br>";
-        $test++;
-    } while ($test < 15);
+    // $test = 10;
+    // do {
+    //     echo "This is test $test <br>";
+    //     $test++;
+    // } while ($test < 15);
+
+    $fruits = ["Apple" => "Red", "Banana" => "Yellow", "Orange" => "Orange", "Mango" => "Green"];
+
+    foreach ($fruits as $fruit => $color) {
+        echo "$fruit $color . <br>";
+    }
     ?>
 </body>
 
