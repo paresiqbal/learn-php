@@ -1,7 +1,7 @@
 <?php
 
 $dsn  = "mysql:host=localhost;dbname=php-tutorial";
-$dbusername = "rooot";
+$dbusername = "root";
 $dbpassword = "";
 
 try {
