@@ -1,6 +1,5 @@
 <?php
-session_start();
-$_SESSION["username"] = "Pares";
+require_once "config.php";
 ?>
 
 <!DOCTYPE html>
@@ -13,9 +12,7 @@ $_SESSION["username"] = "Pares";
 </head>
 
 <body>
-    <?php
-    echo $_SESSION["username"];
-    ?>
+
 </body>
 
 </html>
