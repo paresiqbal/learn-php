@@ -1,8 +1,3 @@
-<?php
-session_start();
-$_SESSION["username"] = "Pares";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
