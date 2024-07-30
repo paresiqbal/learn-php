@@ -12,8 +12,7 @@ require_once "config.php";
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, est.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, eaque? Repudiandae odit dolores nostrum accusantium blanditiis! Quod eveniet magnam, inventore possimus, quidem quasi incidunt delectus a voluptatibus nihil ipsam id?</p>
+    <p>asdasndiasb</p>
 </body>
 
 </html>
