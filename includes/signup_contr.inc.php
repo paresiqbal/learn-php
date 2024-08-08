@@ -10,3 +10,12 @@ function is_input_emty($username, $email, $pwd)
         return false;
     }
 }
+
+function is_email_invalid($email)
+{
+    if (empty($email)) {
+        return true;
+    } else {
+        return false;
+    }
+}

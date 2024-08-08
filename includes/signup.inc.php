@@ -11,10 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require_once "signup_contr.inc.php";
 
         // handling error
-        try {
-            //code...
-        } catch (\Throwable $th) {
-            //throw $th;
+        if (is_input_emty($username, $email, $pwd)) {
         }
     } catch (PDOException $e) {
         die("Query Failed: " . $e->getMessage());
