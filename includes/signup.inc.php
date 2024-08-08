@@ -16,6 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (is_email_invalid($email)) {
         }
+
+        if (is_usrname_taken($pdo, $username)) {
+        }
     } catch (PDOException $e) {
         die("Query Failed: " . $e->getMessage());
     }
