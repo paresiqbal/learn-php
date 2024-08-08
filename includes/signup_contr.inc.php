@@ -13,7 +13,7 @@ function is_input_emty($username, $email, $pwd)
 
 function is_email_invalid($email)
 {
-    if (empty($email)) {
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         return true;
     } else {
         return false;
