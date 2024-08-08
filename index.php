@@ -22,6 +22,10 @@
         <input type="password" name="pwd" placeholder="Password">
         <button>Login</button>
     </form>
+
+    <?php
+    check_signup_errors();
+    ?>
 </body>
 
 </html>
