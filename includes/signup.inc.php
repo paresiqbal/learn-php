@@ -13,6 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // handling error
         if (is_input_emty($username, $email, $pwd)) {
         }
+
+        if (is_email_invalid($email)) {
+        }
     } catch (PDOException $e) {
         die("Query Failed: " . $e->getMessage());
     }
