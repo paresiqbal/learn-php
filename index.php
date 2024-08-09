@@ -25,8 +25,9 @@ require_once "includes/signup_view.inc.php";
         <input type="text" name="username" placeholder="Username">
         <input type="text" name="email" placeholder="Email">
         <input type="password" name="pwd" placeholder="Password">
-        <button>Signup</button>
+        <button type="submit">Signup</button>
     </form>
+
 
     <?php
     check_signup_errors();

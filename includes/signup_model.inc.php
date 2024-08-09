@@ -34,8 +34,13 @@ function set_users(object $pdo, string $username, string $email, string $pwd)
     ];
     $hashed_pwd = password_hash($pwd, PASSWORD_BCRYPT, $options);
 
-    $stmt->bindParam(':username', $username);
-    $stmt->bindParam(':email', $email);
-    $stmt->bindParam(':pwd',  $hashed_pwd);
-    $stmt->execute();
+    $stmt->bindParam(':username', $username, PDO::PARAM_STR);
+    $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+    $stmt->bindParam(':pwd', $hashed_pwd, PDO::PARAM_STR);
+
+    try {
+        $stmt->execute();
+    } catch (PDOException $e) {
+        die("Error inserting user: " . $e->getMessage());
+    }
 }
