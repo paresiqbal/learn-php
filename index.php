@@ -27,6 +27,7 @@ require_once "includes/signup_view.inc.php";
         <input type="password" name="pwd" placeholder="Password">
         <button type="submit">Signup</button>
     </form>
+    <h1>Lorem ipsum dolor sit amet.</h1>
 
 
     <?php
