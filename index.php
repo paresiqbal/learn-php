@@ -13,7 +13,7 @@ require_once "includes/signup_view.inc.php";
 </head>
 
 <body>
-
+    <p>12312313</p>
 </body>
 
 </html>
